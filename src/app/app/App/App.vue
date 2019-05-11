@@ -6,16 +6,17 @@
 
     <vue-nav-bar>
       <router-link slot="middle" to="/">
-        <vue-icon-vuesion :class="$style.logo" />
+         <img src="N-icon-black.png" alt="vuesion" :class="$style.logo" />
       </router-link>
 
-      <vue-button slot="right" color="primary" @click="showLoginModal = true">
+      <vue-button slot="right"  color="primary" @click="showLoginModal = true">
         Projects
       </vue-button>
 
-      <vue-button slot="right" color="primary" @click="showLoginModal = true">
+      <vue-button slot="right"  color="primary" @click="showLoginModal = true">
         Contact
       </vue-button>
+
     </vue-nav-bar>
 
     <router-view :class="$style.content" />
@@ -32,27 +33,34 @@
     </vue-cookie-consent> -->
 
     <vue-sidebar>
+
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="/">
+          <vue-sidebar-group-item to="/">
           <vue-icon-code />
           Home
         </vue-sidebar-group-item>
       </vue-sidebar-group>
 
+
+
+        
       <vue-sidebar-group title="Featured Projects">
-        <vue-sidebar-group-item>
+        
+
+        <vue-sidebar-group-item >
           <router-link to="/featuredProject1">
-            <vue-icon-code />
+          <vue-icon-code />
             Project 1
           </router-link>
         </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item>
+        <vue-sidebar-group-item >
           <router-link to="/featuredProject2">
-            <vue-icon-code />
+          <vue-icon-code />
             Project 2
           </router-link>
         </vue-sidebar-group-item>
+
 
         <vue-sidebar-group-item to="/form">
           <vue-icon-hashtag />
@@ -75,8 +83,10 @@
         <vue-sidebar-group-item>
           <a href="https://slack-vuesion.herokuapp.com/" target="_blank" rel="noopener"> Contact </a>
         </vue-sidebar-group-item>
+
       </vue-sidebar-group>
     </vue-sidebar>
+
   </div>
 </template>
 
@@ -105,12 +115,12 @@ import VueButton from '@components/VueButton/VueButton.vue';
 import VueModal from '@components/VueModal/VueModal.vue';
 import LoginForm from '@shared/modules/auth/LoginForm/LoginForm.vue';
 import { addNotification } from '@components/VueNotificationStack/utils';
-import VueIconVuesion from '@components/icons/VueIconVuesion/VueIconVuesion.vue';
+import VueIconN from '@components/icons/VueIconN/VueIconN.vue';
 
 export default {
   name: 'App',
   components: {
-    VueIconVuesion,
+    VueIconN,
     LoginForm,
     VueModal,
     VueButton,

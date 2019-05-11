@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.homePage">
     <stage :disable-particles="disableParticles" />
     <HomeFeatured></HomeFeatured>
     <home-section
@@ -179,3 +179,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" module>
+@import '~@/app/shared/design-system';
+
+
+.homePage {
+  background: rgb(251, 251, 251);
+}
+
+</style>

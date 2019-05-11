@@ -1,37 +1,59 @@
 <template>
   <div :class="$style.homeFeatured">
     <vue-grid>
-      <vue-grid-row >
-        <vue-headline level="1">vuesion</vue-headline>
+      <vue-grid>
+      <vue-grid-row>
+        <vue-headline level="1">Featured Projects</vue-headline>
         <vue-grid>
-          <vue-grid-row >
-            <vue-grid-item :class="$style.projectSection ">
-              <vue-image :class="$style.image" src="/images/projectBackground.png" alt="project placeholder image" native="true"/>
+          <vue-grid-row>
+            <vue-grid-item :class="$style.projectSection">
+              <vue-image
+                :class="$style.image"
+                src="/images/projectBackground.png"
+                alt="project placeholder image"
+                native="true"
+              />
               <vue-headline level="3">Featured Project 1</vue-headline>
-                <br />
+              <br />
             </vue-grid-item>
-            <vue-grid-item :class="$style.projectSection ">
-              <vue-image :class="$style.image" src="/images/projectBackground.png" alt="project placeholder image" native="true"/>
+            <vue-grid-item :class="$style.projectSection">
+              <vue-image
+                :class="$style.image"
+                src="/images/projectBackground.png"
+                alt="project placeholder image"
+                native="true"
+              />
               <vue-headline level="3">Featured Project 2</vue-headline>
-                <br />
+              <br />
             </vue-grid-item>
             <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
           </vue-grid-row>
-          <vue-grid-row >
-            <vue-grid-item :class="$style.projectSection ">
-              <vue-image :class="$style.image" src="/images/projectBackground.png" alt="project placeholder image" native="true"/>
+          <vue-grid-row>
+            <vue-grid-item :class="$style.projectSection">
+              <vue-image
+                :class="$style.image"
+                src="/images/projectBackground.png"
+                alt="project placeholder image"
+                native="true"
+              />
               <vue-headline level="3">Featured Project 3</vue-headline>
-                <br />
+              <br />
             </vue-grid-item>
-            <vue-grid-item :class="$style.projectSection ">
-              <vue-image :class="$style.image" src="/images/projectBackground.png" alt="project placeholder image" native="true"/>
+            <vue-grid-item :class="$style.projectSection">
+              <vue-image
+                :class="$style.image"
+                src="/images/projectBackground.png"
+                alt="project placeholder image"
+                native="true"
+              />
               <vue-headline level="3">Featured Project 4</vue-headline>
-                <br />
+              <br />
             </vue-grid-item>
             <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
           </vue-grid-row>
         </vue-grid>
       </vue-grid-row>
+    </vue-grid>
     </vue-grid>
   </div>
 </template>
@@ -64,18 +86,29 @@ export default {
 
 .projectSection {
   margin-bottom: $space-32;
+  background: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .image {
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 
-
   @include mediaMin(tabletPortrait) {
-
     margin-bottom: 0;
+  }
+
+  @include mediaMax(largeDesktop) {
+    max-width: 300px;
   }
 }
 </style>

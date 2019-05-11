@@ -44,3 +44,13 @@ $grid-breakpoints-max: (
     @error "breakpoint not supported!";
   }
 }
+
+@mixin mediaMax($breakpoint-name) {
+  @if map-has-key($grid-breakpoints-max, $breakpoint-name) {
+    @media (max-width: #{map_get($grid-breakpoints-max, $breakpoint-name)}) {
+      @content;
+    }
+  } @else {
+    @error "breakpoint not supported!";
+  }
+}

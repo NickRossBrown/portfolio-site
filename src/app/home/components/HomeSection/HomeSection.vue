@@ -47,7 +47,7 @@ export default {
 }
 
 .alternative {
-  background: rgb(251, 251, 251);;
+  background: rgb(251, 251, 251);
 }
 
 .flip {

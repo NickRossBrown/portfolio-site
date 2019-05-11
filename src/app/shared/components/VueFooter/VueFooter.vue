@@ -3,21 +3,29 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item>
-          <small>&copy; Copyright {{ year }} Johannes Werner</small>
+            <vue-headline :class="$style.footerHeadline" level="2">Looking to start a project?</vue-headline>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item>
+          <small>&copy; {{ year }} Nick Ross Brown</small>
         </vue-grid-item>
 
         <vue-grid-item>
-          <a href="https://github.com/devCrossNet" target="_blank" rel="noopener" aria-label="github profile">
+          <a href="https://github.com/NickRossBrown" target="_blank" rel="noopener" aria-label="github profile">
             <vue-icon-github-alt />
           </a>
-          <a href="https://twitter.com/vuesion1" target="_blank" rel="noopener" aria-label="twitter profile">
-            <vue-icon-twitter-square />
+          <a href="https://linkedin.com/in/nick-ross-brown" target="_blank" rel="noopener" aria-label="twitter profile">
+            <vue-icon-linked-in/>
+          </a>
+          <a href="mailto: nickrossbrown@gmail.com" rel="noopener" aria-label="twitter profile">
+            <vue-icon-Mail/>
           </a>
         </vue-grid-item>
 
         <vue-grid-item>
           <small>
-            <a href="https://github.com/vuesion/vuesion/blob/master/LICENSE" target="_blank" rel="noopener">
+            <a href="https://github.com/NickRossBrown/portfolio-site/blob/master/LICENSE" target="_blank" rel="noopener">
               MIT License
             </a>
           </small>
@@ -33,6 +41,9 @@ import VueGridItem from '../VueGridItem/VueGridItem.vue';
 import VueGridRow from '../VueGridRow/VueGridRow.vue';
 import VueIconGithubAlt from '../icons/VueIconGithubAlt/VueIconGithubAlt.vue';
 import VueIconTwitterSquare from '../icons/VueIconTwitterSquare/VueIconTwitterSquare.vue';
+import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
+import VueIconLinkedIn from '../icons/VueIconLinkedIn/VueIconLinkedIn.vue';
+import VueIconMail from '../icons/VueIconMail/VueIconMail.vue';
 
 export default {
   name: 'VueFooter',
@@ -42,6 +53,9 @@ export default {
     VueGrid,
     VueGridItem,
     VueGridRow,
+    VueHeadline,
+    VueIconMail,
+    VueIconLinkedIn,
   },
   computed: {
     year() {
@@ -84,5 +98,9 @@ export default {
       color: $footer-link-hover-color;
     }
   }
+}
+
+.footerHeadline{
+  padding: 30px;  
 }
 </style>

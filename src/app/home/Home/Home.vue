@@ -1,6 +1,7 @@
 <template>
   <div>
     <stage :disable-particles="disableParticles" />
+    <HomeFeatured></HomeFeatured>
     <home-section
       image="https://images.unsplash.com/photo-1549082984-1323b94df9a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=512&q=60"
       alternative
@@ -109,6 +110,7 @@
 import { mapState } from 'vuex';
 import Stage from '../components/Stage/Stage.vue';
 import HomeSection from '@/app/home/components/HomeSection/HomeSection.vue';
+import HomeFeatured from '@/app/home/components/HomeFeatured/HomeFeatured.vue';
 import { IState } from '@/app/state';
 import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 
@@ -167,6 +169,7 @@ export default {
     VueHeadline,
     HomeSection,
     Stage,
+    HomeFeatured,
   },
   computed: {
     ...mapState({

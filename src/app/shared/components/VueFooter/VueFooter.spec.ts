@@ -7,6 +7,6 @@ describe('VueFooter.vue', () => {
   test('renders component', () => {
     const wrapper = mount(VueFooter, { localVue });
 
-    expect(wrapper.find('small').text()).toMatch('Copyright');
+    expect(wrapper.find('small').text()).toMatch('© 2019 Nick Ross Brown');
   });
 });

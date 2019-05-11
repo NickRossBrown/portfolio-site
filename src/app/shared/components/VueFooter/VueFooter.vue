@@ -3,7 +3,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item>
-            <vue-headline :class="$style.footerHeadline" level="2">Looking to start a project?</vue-headline>
+          <vue-headline :class="$style.footerHeadline" level="2">Looking to start a project?</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
@@ -16,16 +16,20 @@
             <vue-icon-github-alt />
           </a>
           <a href="https://linkedin.com/in/nick-ross-brown" target="_blank" rel="noopener" aria-label="twitter profile">
-            <vue-icon-linked-in/>
+            <vue-icon-linked-in />
           </a>
           <a href="mailto: nickrossbrown@gmail.com" rel="noopener" aria-label="twitter profile">
-            <vue-icon-Mail/>
+            <vue-icon-Mail />
           </a>
         </vue-grid-item>
 
         <vue-grid-item>
           <small>
-            <a href="https://github.com/NickRossBrown/portfolio-site/blob/master/LICENSE" target="_blank" rel="noopener">
+            <a
+              href="https://github.com/NickRossBrown/portfolio-site/blob/master/LICENSE"
+              target="_blank"
+              rel="noopener"
+            >
               MIT License
             </a>
           </small>
@@ -100,7 +104,7 @@ export default {
   }
 }
 
-.footerHeadline{
-  padding: 30px;  
+.footerHeadline {
+  padding: 30px;
 }
 </style>

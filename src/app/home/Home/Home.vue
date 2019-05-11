@@ -183,9 +183,7 @@ export default {
 <style lang="scss" module>
 @import '~@/app/shared/design-system';
 
-
 .homePage {
   background: rgb(251, 251, 251);
 }
-
 </style>

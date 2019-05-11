@@ -7,6 +7,8 @@ import { CounterRoutes } from './counter/routes';
 import { FormRoutes } from './form/routes';
 import { DashboardRoutes } from './dashboard/routes';
 import { store } from '@/app/store';
+import { FeaturedProject1Routes } from './featuredProject1/routes';
+import { FeaturedProject2Routes } from './featuredProject2/routes';
 
 Vue.use(VueRouter);
 Vue.use(Meta);
@@ -14,7 +16,15 @@ Vue.use(Meta);
 export const router: VueRouter = new VueRouter({
   mode: 'history',
   base: __dirname,
-  routes: [...AppRoutes, ...HomeRoutes, ...CounterRoutes, ...FormRoutes, ...DashboardRoutes],
+  routes: [
+    ...AppRoutes,
+    ...HomeRoutes,
+    ...CounterRoutes,
+    ...FormRoutes,
+    ...DashboardRoutes,
+    ...FeaturedProject1Routes,
+    ...FeaturedProject2Routes,
+  ],
   scrollBehavior(to: Route, from: Route, savedPosition: { x: number; y: number }) {
     if (to.hash) {
       return { selector: to.hash };

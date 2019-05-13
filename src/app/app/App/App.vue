@@ -35,7 +35,7 @@
       consent.
     </vue-cookie-consent> -->
 
-    <vue-sidebar>
+    <!-- <vue-sidebar>
       <vue-sidebar-group title="Navigation">
         <vue-sidebar-group-item to="/">
           <vue-icon-code />
@@ -80,7 +80,7 @@
           <a href="https://slack-vuesion.herokuapp.com/" target="_blank" rel="noopener"> Contact </a>
         </vue-sidebar-group-item>
       </vue-sidebar-group>
-    </vue-sidebar>
+    </vue-sidebar> -->
   </div>
 </template>
 

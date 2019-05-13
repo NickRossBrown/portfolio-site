@@ -1,19 +1,37 @@
 <template>
-  <div :class="$style.implementedFeatures">
-    ImplementedFeatures
+  <div :class="[$style.implementedFeatures, alternative ? $style.alternative : null]">
+    <vue-grid>
+      <vue-grid-row :class="[flip ? $style.flip : null]">
+        <vue-grid-item :class="$style.image">
+          <vue-image :src="image" :native="false" :class="$style.image" />
+        </vue-grid-item>
+        <vue-grid-item :class="$style.text"><slot /></vue-grid-item>
+      </vue-grid-row>
+    </vue-grid>
   </div>
 </template>
 
 <script lang="ts">
+import VueGrid from '@components/VueGrid/VueGrid.vue';
+import VueGridRow from '@components/VueGridRow/VueGridRow.vue';
+import VueGridItem from '@components/VueGridItem/VueGridItem.vue';
+import VueImage from '@components/VueImage/VueImage.vue';
+
 export default {
   name: 'ImplementedFeatures',
-  components: {},
-  props: {},
-  data(): any {
-    return {};
+  components: { VueImage, VueGridItem, VueGridRow, VueGrid },
+  props: {
+    image: {
+      type: String,
+      required: true,
+    },
+    alternative: {
+      type: Boolean,
+    },
+    flip: {
+      type: Boolean,
+    },
   },
-  computed: {},
-  methods: {},
 };
 </script>
 
@@ -21,6 +39,32 @@ export default {
 @import '~@/app/shared/design-system';
 
 .implementedFeatures {
-  display: block;
+  padding: $space-48 0;
+
+  @include mediaMin(tabletPortrait) {
+    padding: $space-84 0;
+  }
+}
+
+.alternative {
+  background: rgb(251, 251, 251);
+}
+
+.flip {
+  @include mediaMin(tabletPortrait) {
+    flex-direction: row-reverse;
+  }
+}
+
+.image {
+  min-height: 256px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @include mediaMin(tabletPortrait) {
+    min-height: 400px;
+    margin-bottom: 0;
+  }
 }
 </style>

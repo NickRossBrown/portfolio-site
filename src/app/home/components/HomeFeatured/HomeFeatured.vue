@@ -6,7 +6,7 @@
         <vue-grid-row>
           <vue-grid>
             <vue-grid-row>
-              <router-link to="/DivorceMended">
+              <router-link to="/DivorceMended" :class="$style.anchorLink">
                 <vue-grid-item :class="$style.projectSection">
                   <vue-image
                     :class="$style.image"
@@ -121,5 +121,8 @@ export default {
   @include mediaMax(largeDesktop) {
     max-width: 300px;
   }
+}
+.anchorLink {
+  text-decoration: none;
 }
 </style>

@@ -9,6 +9,6 @@ describe('ImplementedFeatures.vue', () => {
       localVue,
     });
 
-    expect(wrapper.text()).toBe('ImplementedFeatures');
+    expect(wrapper.text()).toBe('');
   });
 });

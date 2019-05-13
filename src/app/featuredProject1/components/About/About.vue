@@ -34,11 +34,11 @@ export default {
 
 .about {
   display: block;
-  min-height: 60vh;
+  min-height: 20vh;
   overflow: hidden;
   position: relative;
   text-align: center;
-  text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
+  // text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
   padding-top: $space-48;
 
   background-color: rgb(251, 251, 251);

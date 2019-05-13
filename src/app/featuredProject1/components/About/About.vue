@@ -2,10 +2,9 @@
   <div :class="$style.about">
     <vue-headline level="1">About The Application</vue-headline>
     <p>
-      Divorce is the second highest stressful life event people experience. This application that is a tool centeres
+      Divorce is the second highest stressful life event people experience. This application that is a tool centered
       around empathy and compassion for the user. To help that person navigate through the difficult circumstances from
-      divorce. Knowing that we are more productive as a team, Eric Shull, the origional designer, brought me on to help
-      build the software.
+      divorce.
     </p>
   </div>
 </template>

@@ -2,14 +2,14 @@
   <div :class="$style.featuredProject1">
     <Banner></Banner>
     <About></About>
-    <vue-headline level="2" appearance-level="1" :class="$style.featuresHeadline">Implemented Features </vue-headline>
+    <vue-headline level="2" appearance-level="1" :class="$style.featuresHeadline">Implemented Features</vue-headline>
     <ImplementedFeatures image="/images/mended-suggestions-legal.png" alternative>
       <br />
       <br />
       <vue-headline level="3">Easy to Scroll Suggestions</vue-headline>
       <p>
         Looking through the list takes a simple swipe to horizontally scroll the different suggestions. Clicking on a
-        suggestion opens a page with further information
+        suggestion opens a page with further information.
       </p>
       <br />
       <!-- <vue-headline level="3">Progressive Choices</vue-headline>
@@ -42,8 +42,8 @@
       <br />
       <vue-headline level="3">Calendar</vue-headline>
       <p>
-        All uncompleted scheduled goals show on a calendar that are also color coordinated according to their category
-        type.
+        All uncompleted scheduled goals show on a calendar. Each goal is also color coordinated according to its
+        category type.
       </p>
       <br />
     </ImplementedFeatures>
@@ -51,7 +51,7 @@
       <br />
       <br />
       <vue-headline level="3">Overall Progress</vue-headline>
-      <p>Overall progress is automatically calcuated and conditionaly rendered to show completed goals.</p>
+      <p>Overall progress is automatically calcuated and conditionaly rendered.</p>
       <br />
     </ImplementedFeatures>
   </div>

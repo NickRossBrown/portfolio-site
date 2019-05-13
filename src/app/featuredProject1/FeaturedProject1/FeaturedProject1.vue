@@ -2,13 +2,7 @@
   <div :class="$style.featuredProject1">
     <Banner></Banner>
     <About></About>
-    <vue-grid>
-      <vue-grid-row>
-        <vue-grid-item fill>
-          <vue-headline level="1">Divorce Mended</vue-headline>
-        </vue-grid-item>
-      </vue-grid-row>
-    </vue-grid>
+    <ImplementedFeatures></ImplementedFeatures>
   </div>
 </template>
 
@@ -24,6 +18,7 @@ import VueGridRow from '@/app/shared/components/VueGridRow/VueGridRow.vue';
 import VueHeadline from '@/app/shared/components/VueHeadline/VueHeadline.vue';
 import Banner from '../components/Banner/Banner.vue';
 import About from '../components/About/About.vue';
+import ImplementedFeatures from '../components/ImplementedFeatures/ImplementedFeatures.vue';
 
 export default {
   metaInfo: {
@@ -37,6 +32,7 @@ export default {
     VueHeadline,
     Banner,
     About,
+    ImplementedFeatures,
   },
   methods: {
     ...mapActions('featuredProject1', ['increment', 'decrement']),

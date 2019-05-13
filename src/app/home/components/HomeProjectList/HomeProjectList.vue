@@ -9,87 +9,73 @@
 
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">adventure-game </vue-headline>
+          <vue-headline level="3" :class="$style.projectList_item__header">Spooky Mansion </vue-headline>
           <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
-          <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
+            >An adventure game where a user tries to excape a haunted house
+          </vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
+          <vue-headline level="4" appearance-level="5">Ruby, Sinatra</vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+          <vue-headline level="4" appearance-level="5">Development</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">rails_food_reviews </vue-headline>
+          <vue-headline level="3" :class="$style.projectList_item__header">Draft Board</vue-headline>
           <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
-          <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+            >A draft board to help users select players during a fantasy football draft</vue-headline
           >
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
+          <vue-headline level="4" appearance-level="5">Angular, Typescript</vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+          <vue-headline level="4" appearance-level="5">Development</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">fantasy-football draftboard </vue-headline>
+          <vue-headline level="3" :class="$style.projectList_item__header">Food Reviews </vue-headline>
           <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
-          <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
+            >A simple app for posting and reviewing various meals
+          </vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
+          <vue-headline level="4" appearance-level="5">Ruby, Rails</vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+          <vue-headline level="4" appearance-level="5">Development</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">shoe-distribution-company</vue-headline>
+          <vue-headline level="3" :class="$style.projectList_item__header">Shoe Inventory</vue-headline>
           <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
-          <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+            >An invortory system for storing and viewing different shoes models across mutliple stores</vue-headline
           >
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
+          <vue-headline level="4" appearance-level="5">Ruby, Sinatra</vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+          <vue-headline level="4" appearance-level="5">Development</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
           <vue-headline level="3" :class="$style.projectList_item__header">CI-CD pipelines</vue-headline>
           <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
-          >
-          <vue-headline level="4" appearance-level="5"
-            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+            >A simple repo that incorperated into docker containers and integrated with mutliple CI
+            websites</vue-headline
           >
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
+          <vue-headline level="4" appearance-level="5">Docker, Travis-CI, Gitlab-CI</vue-headline>
         </vue-grid-item>
         <vue-grid-item :class="$style.projectList_item__description">
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+          <vue-headline level="4" appearance-level="5">CI-CD</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>

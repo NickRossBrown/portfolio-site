@@ -81,6 +81,7 @@ export default {
   text-align: center;
   text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
   padding-top: $space-84;
+  margin-bottom: 0px;
 
   img {
     max-width: 12.8rem;
@@ -109,24 +110,6 @@ export default {
 
   @include mediaMin(tabletPortrait) {
     min-height: 50vh;
-  }
-}
-
-.github {
-  font-size: $font-size-h1;
-  display: inline-block;
-  background: $brand-bg-color;
-  transition: $button-transition;
-  transition-property: box-shadow, background-color;
-  color: $brand-link-color;
-
-  &:hover {
-    box-shadow: $button-active-shadow;
-  }
-
-  i {
-    height: $font-size-h1;
-    width: $font-size-h1;
   }
 }
 </style>

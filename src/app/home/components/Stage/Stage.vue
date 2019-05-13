@@ -16,8 +16,6 @@
           </div>
 
           <br />
-
-          
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
@@ -84,7 +82,7 @@ export default {
   overflow: hidden;
   position: relative;
   text-align: center;
-   text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
+  text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
   padding-top: $space-84;
 
   img {

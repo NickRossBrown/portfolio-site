@@ -2,58 +2,58 @@
   <div :class="$style.homeFeatured">
     <vue-grid>
       <vue-grid>
-      <vue-grid-row>
-        <vue-headline level="1">Featured Projects</vue-headline>
-        <vue-grid>
-          <vue-grid-row>
-            <vue-grid-item :class="$style.projectSection">
-              <vue-image
-                :class="$style.image"
-                src="/images/projectBackground.png"
-                alt="project placeholder image"
-                native="true"
-              />
-              <vue-headline level="3">Featured Project 1</vue-headline>
-              <br />
-            </vue-grid-item>
-            <vue-grid-item :class="$style.projectSection">
-              <vue-image
-                :class="$style.image"
-                src="/images/projectBackground.png"
-                alt="project placeholder image"
-                native="true"
-              />
-              <vue-headline level="3">Featured Project 2</vue-headline>
-              <br />
-            </vue-grid-item>
-            <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
-          </vue-grid-row>
-          <vue-grid-row>
-            <vue-grid-item :class="$style.projectSection">
-              <vue-image
-                :class="$style.image"
-                src="/images/projectBackground.png"
-                alt="project placeholder image"
-                native="true"
-              />
-              <vue-headline level="3">Featured Project 3</vue-headline>
-              <br />
-            </vue-grid-item>
-            <vue-grid-item :class="$style.projectSection">
-              <vue-image
-                :class="$style.image"
-                src="/images/projectBackground.png"
-                alt="project placeholder image"
-                native="true"
-              />
-              <vue-headline level="3">Featured Project 4</vue-headline>
-              <br />
-            </vue-grid-item>
-            <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
-          </vue-grid-row>
-        </vue-grid>
-      </vue-grid-row>
-    </vue-grid>
+        <vue-grid-row>
+          <vue-headline level="1">Featured Projects</vue-headline>
+          <vue-grid>
+            <vue-grid-row>
+              <vue-grid-item :class="$style.projectSection">
+                <vue-image
+                  :class="$style.image"
+                  src="/images/projectBackground.png"
+                  alt="project placeholder image"
+                  native="true"
+                />
+                <vue-headline level="3">Featured Project 1</vue-headline>
+                <br />
+              </vue-grid-item>
+              <vue-grid-item :class="$style.projectSection">
+                <vue-image
+                  :class="$style.image"
+                  src="/images/projectBackground.png"
+                  alt="project placeholder image"
+                  native="true"
+                />
+                <vue-headline level="3">Featured Project 2</vue-headline>
+                <br />
+              </vue-grid-item>
+              <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
+            </vue-grid-row>
+            <vue-grid-row>
+              <vue-grid-item :class="$style.projectSection">
+                <vue-image
+                  :class="$style.image"
+                  src="/images/projectBackground.png"
+                  alt="project placeholder image"
+                  native="true"
+                />
+                <vue-headline level="3">Featured Project 3</vue-headline>
+                <br />
+              </vue-grid-item>
+              <vue-grid-item :class="$style.projectSection">
+                <vue-image
+                  :class="$style.image"
+                  src="/images/projectBackground.png"
+                  alt="project placeholder image"
+                  native="true"
+                />
+                <vue-headline level="3">Featured Project 4</vue-headline>
+                <br />
+              </vue-grid-item>
+              <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
+            </vue-grid-row>
+          </vue-grid>
+        </vue-grid-row>
+      </vue-grid>
     </vue-grid>
   </div>
 </template>
@@ -95,7 +95,6 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .image {

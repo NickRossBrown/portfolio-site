@@ -4,6 +4,8 @@ import { i18n } from '../../shared/plugins/i18n/i18n';
 import Home from './Home.vue';
 import Stage from '../components/Stage/Stage.vue';
 import HomeSection from '../components/HomeSection/HomeSection.vue';
+import HomeFeatured from '@/app/home/components/HomeFeatured/HomeFeatured.vue';
+import HomeProjectList from '@/app/home/components/HomeProjectList/HomeProjectList.vue';
 
 const localVue = createLocalVue();
 
@@ -29,6 +31,7 @@ describe('Home.vue', () => {
     });
 
     expect(wrapper.findAll(Stage)).toHaveLength(1);
-    expect(wrapper.findAll(HomeSection)).toHaveLength(4);
+    expect(wrapper.findAll(HomeSection)).toHaveLength(0);
+    expect(wrapper.findAll(HomeFeatured)).toHaveLength(2);
   });
 });

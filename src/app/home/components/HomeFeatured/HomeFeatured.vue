@@ -1,9 +1,9 @@
 <template>
   <div :class="$style.homeFeatured">
     <vue-grid>
+      <vue-headline level="1" :class="$style.projectSection">Featured Projects</vue-headline>
       <vue-grid>
         <vue-grid-row>
-          <vue-headline level="1">Featured Projects</vue-headline>
           <vue-grid>
             <vue-grid-row>
               <vue-grid-item :class="$style.projectSection">
@@ -82,6 +82,7 @@ export default {
 
 .homeFeatured {
   display: block;
+  text-align: center;
 }
 
 .projectSection {

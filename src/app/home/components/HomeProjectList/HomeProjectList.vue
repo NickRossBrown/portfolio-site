@@ -9,7 +9,78 @@
 
       <vue-grid-row :class="$style.projectList_item">
         <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">Project 1</vue-headline>
+          <vue-headline level="3" :class="$style.projectList_item__header">adventure-game </vue-headline>
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">language</vue-headline>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row :class="$style.projectList_item">
+        <vue-grid-item>
+          <vue-headline level="3" :class="$style.projectList_item__header">rails_food_reviews </vue-headline>
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">language</vue-headline>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row :class="$style.projectList_item">
+        <vue-grid-item>
+          <vue-headline level="3" :class="$style.projectList_item__header">fantasy-football draftboard </vue-headline>
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">language</vue-headline>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row :class="$style.projectList_item">
+        <vue-grid-item>
+          <vue-headline level="3" :class="$style.projectList_item__header">shoe-distribution-company</vue-headline>
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">language</vue-headline>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.projectList_item__description">
+          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row :class="$style.projectList_item">
+        <vue-grid-item>
+          <vue-headline level="3" :class="$style.projectList_item__header">CI-CD pipelines</vue-headline>
+          <vue-headline level="4" appearance-level="5"
+            >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
+          >
           <vue-headline level="4" appearance-level="5"
             >DescriptionDescriptionDescriptionDescriptionDescriptionDescription</vue-headline
           >

@@ -9,13 +9,17 @@
         <img src="N-icon-black.png" alt="vuesion" :class="$style.logo" />
       </router-link>
 
-      <vue-button slot="right" color="primary">
-        Projects
-      </vue-button>
+      <router-link slot="right" to="/#featured">
+        <vue-button color="primary">
+          Projects
+        </vue-button>
+      </router-link>
 
-      <vue-button slot="right" color="primary">
-        Contact
-      </vue-button>
+      <router-link slot="right" to="/#contact">
+        <vue-button color="primary">
+          Contact
+        </vue-button>
+      </router-link>
     </vue-nav-bar>
 
     <router-view :class="$style.content" />
@@ -41,9 +45,9 @@
 
       <vue-sidebar-group title="Featured Projects">
         <vue-sidebar-group-item>
-          <router-link to="/featuredProject1">
+          <router-link to="/DivorceMended">
             <vue-icon-code />
-            Project 1
+            Divorce_Mended
           </router-link>
         </vue-sidebar-group-item>
 

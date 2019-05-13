@@ -3,7 +3,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item fill>
-          <vue-headline level="1">FeaturedProject1</vue-headline>
+          <vue-headline level="1">Divorce Mended</vue-headline>
         </vue-grid-item>
 
         <vue-grid-item fill>

@@ -48,7 +48,7 @@ describe('FeaturedProject1.vue', () => {
       i18n,
     });
 
-    expect(wrapper.find('h1').text()).toBe('FeaturedProject1');
+    expect(wrapper.find('h1').text()).toBe('Divorce Mended');
   });
 
   test('should increment and decrement', () => {

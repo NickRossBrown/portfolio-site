@@ -12,7 +12,7 @@
                     :class="$style.image"
                     src="/images/divorce-mended-phones-layout.png"
                     alt="project placeholder image"
-                    native="true"
+                    native
                   />
                   <vue-headline level="3" :class="$style.projectSection__title">Divorce Mended</vue-headline>
                   <br />

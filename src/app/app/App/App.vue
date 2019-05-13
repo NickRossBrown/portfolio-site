@@ -6,10 +6,10 @@
 
     <vue-nav-bar>
       <router-link slot="middle" to="/">
-        <img src="N-icon-black.png" alt="vuesion" :class="$style.logo" />
+        <img src="N-icon-black.png" alt="N icon black" :class="$style.logo" />
       </router-link>
 
-      <router-link slot="right" to="/#featured">
+      <router-link slot="left" to="/#featured">
         <vue-button color="primary">
           Projects
         </vue-button>

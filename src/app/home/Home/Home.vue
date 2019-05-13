@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.homePage">
-    <stage :disable-particles="disableParticles" />
+    <stage :disable-particles="false" />
     <home-featured id="featured"></home-featured>
     <home-project-list></home-project-list>
   </div>

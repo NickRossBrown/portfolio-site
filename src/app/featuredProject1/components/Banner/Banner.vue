@@ -8,7 +8,7 @@
           <vue-grid-item class="vueGridItem">
             <vue-headline level="1">Divorce Mended</vue-headline>
             <div :class="$style.subTitle">
-              {{ $t('A native application that provides guidance through divorce') }}
+              <p>A native application that provides guidance through Divorce</p>
             </div>
             <br />
           </vue-grid-item>
@@ -75,7 +75,7 @@ export default {
 @import '~@/app/shared/design-system';
 
 .stage {
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
   position: relative;
   text-align: center;

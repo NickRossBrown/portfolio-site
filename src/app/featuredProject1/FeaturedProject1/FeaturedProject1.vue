@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.featuredProject1">
-    <Banner></Banner>
+    <Banner :disable-particles="false"></Banner>
     <About></About>
     <vue-headline level="2" appearance-level="1" :class="$style.featuresHeadline">Implemented Features</vue-headline>
     <ImplementedFeatures image="/images/mended-suggestions-legal.png" alternative>

@@ -5,7 +5,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item class="vueGridItem">
-          <img src="N-icon-secondary.png" alt="vuesion" />
+          <img src="N-icon-secondary.png" alt="N icon secondary" />
           <vue-headline level="1">Nick Ross Brown</vue-headline>
           <div :class="$style.subTitle">
             {{

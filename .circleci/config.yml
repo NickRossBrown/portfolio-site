@@ -1,6 +1,6 @@
 version: 2
-app-name: &app_name vuesion
-workspace-name: &working_directory ~/repo
+app-name: &app_name NickRossBrown
+workspace-name: &working_directory ~/https://github.com/NickRossBrown/portfolio-site
 jobs:
   build:
     environment:

@@ -24,7 +24,7 @@
 
     <router-view :class="$style.content" />
 
-    <vue-footer />
+    <vue-footer id="contact" />
 
     <!-- <vue-cookie-consent
       current-version="1.0.0"

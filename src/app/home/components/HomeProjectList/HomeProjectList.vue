@@ -92,58 +92,6 @@
           <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
-
-      <vue-grid-row :class="$style.projectList_item">
-        <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">Project 1</vue-headline>
-          <vue-headline level="4" appearance-level="5">Description</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
-        </vue-grid-item>
-      </vue-grid-row>
-
-      <vue-grid-row :class="$style.projectList_item">
-        <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">Project 1</vue-headline>
-          <vue-headline level="4" appearance-level="5">Description</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
-        </vue-grid-item>
-      </vue-grid-row>
-
-      <vue-grid-row :class="$style.projectList_item">
-        <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">Project 1</vue-headline>
-          <vue-headline level="4" appearance-level="5">Description</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
-        </vue-grid-item>
-      </vue-grid-row>
-
-      <vue-grid-row :class="$style.projectList_item">
-        <vue-grid-item>
-          <vue-headline level="3" :class="$style.projectList_item__header">Project 1</vue-headline>
-          <vue-headline level="4" appearance-level="5">Description</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">language</vue-headline>
-        </vue-grid-item>
-        <vue-grid-item>
-          <vue-headline level="4" appearance-level="5">Development Design UX</vue-headline>
-        </vue-grid-item>
-      </vue-grid-row>
     </vue-grid>
   </div>
 </template>
@@ -190,11 +138,6 @@ export default {
   h3 {
     color: $brand-primary;
   }
-  &__header:active,
-  &__header:focus,
-  &__header:hover {
-    color: #fff;
-  }
   &:active,
   &:focus,
   &:hover {
@@ -202,22 +145,22 @@ export default {
     border-color: transparent;
     box-shadow: 0 1px 6px rgba(93, 93, 93, 0.16);
     background: linear-gradient(90deg, #2fe0c5, #3bdcc4, #2fe0c5);
-    color: #fff !important;
+    color: #fff;
+
+    h3 {
+      color: $brand-secondary;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
-// .projectList_item__header {
-//   color: $brand-primary;
+
+// .projectList_item__description {
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-end;
 // }
-// .projectList_item:active, .projectList_item:focus, .projectList_item:hover {
-//     transform: translateY(-3px);
-//     border-color: transparent;
-//     box-shadow: 0 1px 6px rgba(93,93,93,.16);
-//     background: linear-gradient(90deg,#2fe0c5,#3bdcc4,#2fe0c5);
-//     color: #fff !important;
-// }
-.projectList_item__description {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
 </style>

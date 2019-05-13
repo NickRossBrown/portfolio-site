@@ -1,19 +1,11 @@
 <template>
   <div :class="$style.featuredProject1">
+    <Banner></Banner>
+    <About></About>
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item fill>
           <vue-headline level="1">Divorce Mended</vue-headline>
-        </vue-grid-item>
-
-        <vue-grid-item fill>
-          <vue-button color="secondary" :loading="incrementPending" @click="increment">Increment +1 </vue-button>
-          <br />
-          <br />
-        </vue-grid-item>
-        <vue-grid-item fill>
-          <vue-button color="primary" :loading="decrementPending" @click="decrement">Decrement -1 </vue-button>
-          <vue-headline level="3">Count is {{ count }}</vue-headline>
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
@@ -30,6 +22,8 @@ import VueGridItem from '@/app/shared/components/VueGridItem/VueGridItem.vue';
 import VueButton from '@/app/shared/components/VueButton/VueButton.vue';
 import VueGridRow from '@/app/shared/components/VueGridRow/VueGridRow.vue';
 import VueHeadline from '@/app/shared/components/VueHeadline/VueHeadline.vue';
+import Banner from '../components/Banner/Banner.vue';
+import About from '../components/About/About.vue';
 
 export default {
   metaInfo: {
@@ -41,6 +35,8 @@ export default {
     VueButton,
     VueGridRow,
     VueHeadline,
+    Banner,
+    About,
   },
   methods: {
     ...mapActions('featuredProject1', ['increment', 'decrement']),

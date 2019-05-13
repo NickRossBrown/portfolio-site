@@ -6,9 +6,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en',
-      title: 'vuesion',
-      description:
-        'The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
+      title: 'NickRossBrown',
+      description: 'A personal portfolio page to showcase projects',
     },
     '/zh-cn/': {
       lang: 'zh-CN',

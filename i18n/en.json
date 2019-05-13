@@ -1,5 +1,5 @@
 {
-  "App.core.description": "The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices",
+  "App.core.description": "A progressive web application to showcase projects",
   "auth.LoginForm.cta": "Login",
   "auth.LoginForm.password.error": "The password has to have at least 6 characters",
   "auth.LoginForm.title": "Login Example",

@@ -1,22 +1,24 @@
 <template>
   <div :class="$style.homeFeatured">
     <vue-grid>
-      <vue-headline level="1" :class="$style.projectSection">Featured Projects</vue-headline>
+      <vue-headline level="1" :class="$style.projectHeader">Featured</vue-headline>
       <vue-grid>
         <vue-grid-row>
           <vue-grid>
             <vue-grid-row>
-              <vue-grid-item :class="$style.projectSection">
-                <vue-image
-                  :class="$style.image"
-                  src="/images/projectBackground.png"
-                  alt="project placeholder image"
-                  native="true"
-                />
-                <vue-headline level="3">Featured Project 1</vue-headline>
-                <br />
-              </vue-grid-item>
-              <vue-grid-item :class="$style.projectSection">
+              <router-link to="/DivorceMended">
+                <vue-grid-item :class="$style.projectSection">
+                  <vue-image
+                    :class="$style.image"
+                    src="/images/divorce-mended-phones-layout.png"
+                    alt="project placeholder image"
+                    native="true"
+                  />
+                  <vue-headline level="3" :class="$style.projectSection__title">Divorce Mended</vue-headline>
+                  <br />
+                </vue-grid-item>
+              </router-link>
+              <!-- <vue-grid-item :class="$style.projectSection">
                 <vue-image
                   :class="$style.image"
                   src="/images/projectBackground.png"
@@ -26,7 +28,6 @@
                 <vue-headline level="3">Featured Project 2</vue-headline>
                 <br />
               </vue-grid-item>
-              <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
             </vue-grid-row>
             <vue-grid-row>
               <vue-grid-item :class="$style.projectSection">
@@ -48,8 +49,7 @@
                 />
                 <vue-headline level="3">Featured Project 4</vue-headline>
                 <br />
-              </vue-grid-item>
-              <!-- <vue-grid-item :class="$style.text"><slot /></vue-grid-item> -->
+              </vue-grid-item> -->
             </vue-grid-row>
           </vue-grid>
         </vue-grid-row>
@@ -96,6 +96,17 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  &:active,
+  &:focus,
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba(93, 93, 93, 0.1);
+    color: $brand-secondary;
+  }
+  &__title {
+    color: black;
+    text-decoration: none !important;
+  }
 }
 
 .image {

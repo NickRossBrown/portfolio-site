@@ -2,7 +2,7 @@
   <div :class="$style.homePage">
     <stage :disable-particles="disableParticles" />
     <home-featured id="featured"></home-featured>
-    <home-project-list id="contact"></home-project-list>
+    <home-project-list></home-project-list>
   </div>
 </template>
 
@@ -17,12 +17,11 @@ import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 
 export default {
   metaInfo: {
-    title: 'vuesion - flexible, scalable, opinionated, fast',
+    title: 'NickRossBrown',
     meta: [
       {
         name: 'description',
-        content:
-          'vuesion - The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
+        content: 'NickRossBrowns website- A personal portfolio website to showcase projects',
       },
       {
         name: 'robots',
@@ -30,40 +29,23 @@ export default {
       },
       {
         name: 'keywords',
-        content: 'vue.js, vuex, vuex-persist, seo, server-side-rendering, isomorphic, progressive-web-app',
+        content:
+          'NickRossBrown, Nick, Ross, Brown, portfolio, vue, nativescript, javascript, seo, server-side-rendering, isomorphic, progressive-web-app',
       },
 
-      { name: 'og:url', content: 'https://vuesion.herokuapp.com/' },
-      { name: 'og:site_name', content: 'vuesion' },
+      { name: 'og:url', content: 'https://nickrossbrown.com/' },
+      { name: 'og:site_name', content: 'portfolio' },
       { name: 'og:type', content: 'website' },
       { name: 'og:locale', content: 'en' },
       {
         name: 'og:title',
-        content:
-          'vuesion - The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
+        content: 'NickRossBrowns website- A personal portfolio website to showcase projects',
       },
       {
         name: 'og:description',
-        content:
-          'vuesion - The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
+        content: 'NickRossBrowns website- A personal portfolio website to showcase projects',
       },
-      { name: 'og:image:url', content: 'https://vuesion.herokuapp.com/logo.png' },
-
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@vuesion1' },
-      { name: 'twitter:creator', content: '@vuesion1' },
-      {
-        name: 'twitter:title',
-        content:
-          'vuesion - The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
-      },
-      { name: 'twitter:url', content: 'https://vuesion.herokuapp.com/' },
-      { name: 'twitter:image', content: 'https://vuesion.herokuapp.com/logo.png' },
-      {
-        name: 'twitter:description',
-        content:
-          'vuesion - The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices',
-      },
+      { name: 'og:image:url', content: '/logo.png' },
     ],
   },
   components: {

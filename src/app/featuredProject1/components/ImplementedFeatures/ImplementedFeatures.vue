@@ -5,7 +5,7 @@
         <vue-grid-item :class="$style.image">
           <vue-image :src="image" :native="false" :class="$style.image" />
         </vue-grid-item>
-        <vue-grid-item :class="$style.text"><slot /></vue-grid-item>
+        <vue-grid-item :class="$style.feature__text"><slot :class="$style.text"/></vue-grid-item>
       </vue-grid-row>
     </vue-grid>
   </div>
@@ -39,10 +39,10 @@ export default {
 @import '~@/app/shared/design-system';
 
 .implementedFeatures {
-  padding: $space-48 0;
+  padding: $space-12 0;
 
   @include mediaMin(tabletPortrait) {
-    padding: $space-84 0;
+    padding: $space-24 0;
   }
 }
 
@@ -65,6 +65,17 @@ export default {
   @include mediaMin(tabletPortrait) {
     min-height: 400px;
     margin-bottom: 0;
+  }
+}
+.feature__text{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 12rem;
+  @include mediaMax(tabletPortrait) {
+    padding-top: $space-24;
   }
 }
 </style>

@@ -193,9 +193,4 @@ export default {
   text-decoration: none;
 }
 
-// .projectList_item__description {
-//   display: flex;
-//   justify-content: center;
-//   align-items: flex-end;
-// }
 </style>

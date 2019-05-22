@@ -1,58 +1,38 @@
 <template>
   <div :class="$style.featuredProject1">
     <Banner :disable-particles="false"></Banner>
-    <About></About>
-    <vue-headline level="2" appearance-level="1" :class="$style.featuresHeadline">Implemented Features</vue-headline>
-    <ImplementedFeatures image="/images/mended-suggestions-legal.png" alternative>
-      <br />
-      <br />
-      <vue-headline level="3">Easy to Scroll Suggestions</vue-headline>
+    <About title="Why This Project?">A graphic designer, Eric brought me onto a project he's been designing for years (the application's wire-frame is the image above). I have a positive work history with Eric. Where open, positive, and constant communication feels natural. I joined primarily because I enjoy working on a team. I find myself having more motivation, working harder, and learning more when I part of a group working towards a common goal. When I am part of a team works well together I find myself 'getting into the zone.' Entering a state of mind where anything feels possible. The fact that I personally had very little knowledge or experience about divorce didn't matter. Or the fact that either of I never made a native phone application before. We started by deciding on what technology to build the application with (all of which we haven't heard of before).</About>
+    <About title="Implemented Features" flipColor>Below is a list of screenshots shows current features in the applicated that are completed.</About>
+    <ImplementedFeatures image="/images/mended-suggestions-legal.png"  :class="$style.featureHeadline" alternative>
+      <vue-headline level="3">Scroll Through Suggestions</vue-headline>
       <p>
         Looking through the list takes a simple swipe to horizontally scroll the different suggestions. Clicking on a
         suggestion opens a page with further information.
       </p>
-      <br />
-      <!-- <vue-headline level="3">Progressive Choices</vue-headline>
-      <p>A user can either add or remove each suggestion and work their way through each list.</p>
-      <br /> -->
     </ImplementedFeatures>
-    <ImplementedFeatures image="/images/mended-suggestion-page.png" flip>
-      <br />
-      <br />
-      <vue-headline level="3">Interactive List</vue-headline>
+    <ImplementedFeatures image="/images/mended-suggestion-page.png" flip :class="$style.featureHeadline">
+      <vue-headline level="3">Progress Through The List</vue-headline>
       <p>If a user either adds or clicks 'remove,' that suggestion is removed from the suggestion list.</p>
-      <br />
     </ImplementedFeatures>
-    <ImplementedFeatures image="/images/mended-goal-list-selected.png" alternative>
-      <br />
-      <br />
+    <ImplementedFeatures image="/images/mended-goal-list-selected.png" alternative :class="$style.featureHeadline">
       <vue-headline level="3">View Selected Choices</vue-headline>
       <p>Added suggestions rendor on the goals list, where they can be selected for futher detail.</p>
-      <br />
     </ImplementedFeatures>
-    <ImplementedFeatures image="/images/mended-subgoal-options.png" flip>
-      <br />
-      <br />
-      <vue-headline level="3">Schedule and Complete</vue-headline>
+    <ImplementedFeatures image="/images/mended-subgoal-options.png" flip :class="$style.featureHeadline">
+      <vue-headline level="3">Schedule or Mark Complete</vue-headline>
       <p>A goal can be have a date set for when a user plans on completing the task, or mark a goal a complete.</p>
-      <br />
     </ImplementedFeatures>
-    <ImplementedFeatures image="/images/mended-calendar.png" alternative>
-      <br />
-      <br />
-      <vue-headline level="3">Calendar</vue-headline>
+    <ImplementedFeatures image="/images/mended-calendar.png" alternative :class="$style.featureHeadline">
+      <vue-headline level="3">View Calendar</vue-headline>
       <p>
-        All uncompleted scheduled goals show on a calendar. Each goal is also color coordinated according to its
-        category type.
+        All uncompleted scheduled goals are displayed on a calendar. Each goal is also color coordinated according to its category type.
       </p>
-      <br />
     </ImplementedFeatures>
-    <ImplementedFeatures image="/images/mended-progress.png" flip>
-      <br />
-      <br />
+    <ImplementedFeatures image="/images/mended-progress.png" flip :class="$style.featureHeadline">
+ 
       <vue-headline level="3">Overall Progress</vue-headline>
       <p>Overall progress is automatically calcuated and conditionaly rendered.</p>
-      <br />
+   
     </ImplementedFeatures>
   </div>
 </template>
@@ -108,9 +88,5 @@ export default {
   margin-top: $nav-bar-height;
   min-height: 500px;
 }
-.featuresHeadline {
-  text-align: center;
-  margin-top: $space-48;
-  margin-bottom: 0px;
-}
+
 </style>

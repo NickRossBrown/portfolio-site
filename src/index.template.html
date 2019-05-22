@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ htmlLang }}" data-vue-meta-server-rendered {{{ meta.inject().htmlAttrs.text() }}}>
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140678224-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-140678224-1');
+  </script>
   <meta charset="utf-8">
   {{{ meta.inject().meta.text() }}} {{{ meta.inject().title.text() }}} {{{ meta.inject().link.text() }}} {{{ meta.inject().style.text() }}} {{{ meta.inject().script.text() }}} {{{ meta.inject().noscript.text() }}}
   <meta name="mobile-web-app-capable" content="yes">

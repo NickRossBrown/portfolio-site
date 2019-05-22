@@ -1,11 +1,17 @@
 <template>
   <div :class="$style.about">
-    <vue-headline level="1">About The Application</vue-headline>
-    <p>
-      Divorce is the second highest stressful life event people experience. This application that is a tool centered
-      around empathy and compassion for the user. To help that person navigate through the difficult circumstances from
-      divorce.
-    </p>
+    <VueGrid :class="[flipColor ? $style.flipColor : null]"> 
+      <VueGridRow> 
+        <VueGridItem :class="$style.text"> 
+          <vue-headline level="1" >{{  title  }} </vue-headline>
+          <br>
+          <p>
+            <slot />
+          </p>
+        </VueGridItem> 
+      </VueGridRow> 
+    </VueGrid> 
+    
   </div>
 </template>
 
@@ -19,7 +25,15 @@ import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 export default {
   name: 'About',
   components: { VueHeadline, VueIconGithub, VueGridItem, VueGridRow, VueGrid },
-  props: {},
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    flipColor: {
+      type: Boolean,
+    },
+  },
   data(): any {
     return {};
   },
@@ -39,7 +53,12 @@ export default {
   text-align: center;
   // text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
   padding-top: $space-48;
+  padding-left: 4rem;
+  padding-right: 4rem;
 
   background-color: rgb(251, 251, 251);
+}
+.flipColor{
+  background-color: #ffffff;
 }
 </style>

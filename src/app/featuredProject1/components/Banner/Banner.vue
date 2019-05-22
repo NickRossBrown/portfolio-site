@@ -8,7 +8,7 @@
           <vue-grid-item class="vueGridItem">
             <vue-headline level="1">Divorce Mended</vue-headline>
             <div :class="$style.subTitle">
-              <p>A native application that provides guidance through Divorce</p>
+              <p>Divorce is the second highest stressful life event people experience. This phone application that is a tool centered around empathy and compassion for the user. To help provide guidance through the difficult circumstances that occur from divorce.</p>
             </div>
             <br />
           </vue-grid-item>

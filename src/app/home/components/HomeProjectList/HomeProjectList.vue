@@ -187,6 +187,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    @include mediaMin(phone) {
+      justify-content: end;
+      font-style: oblique;
+    } 
   }
 }
 .anchorLink {
